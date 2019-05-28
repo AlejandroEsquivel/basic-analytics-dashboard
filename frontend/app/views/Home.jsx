@@ -40,7 +40,7 @@ export default class HomeRoute extends React.Component {
                     {({ state, handleChange }) =>
                         <div className='route'>
                             <Header />
-                            <Button variant="danger" onClick={this.props.auth.signOut} size='sm'>SignOut</Button>
+                            <Button variant="danger" onClick={this.props.auth.signOut} size='sm'>Sign Out</Button>
                             <br />
                             <br />
                             <div className="form-element">

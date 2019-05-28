@@ -77,7 +77,7 @@ export default class MetricsRoute extends React.Component {
                     {({ state, handleChange }) =>
                         <div className='route'>
                             <Header />
-                            <Button variant="danger" onClick={this.props.auth.signOut} size='sm'>SignOut</Button>
+                            <Button variant="danger" onClick={this.props.auth.signOut} size='sm'>Sign Out</Button>
                             <Button variant="dark" onClick={this.handleClick} size='sm'>Go Back</Button>
                             <br />
                             <br />
