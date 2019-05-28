@@ -128,8 +128,8 @@ export default class AnalyticsController {
             nthMonthsAgoMetrics(4)
         ])
         .then(resultsPartition=>{
-            return res.status(200).json(resultsPartition.reduce((acc,curr)=>{
-                acc[curr.alias] = curr;
+            return res.status(200).json(resultsPartition.reduce((acc,metricsResult)=>{
+                acc[metricsResult.alias] = metricsResult;
                 return acc;
             },{}));
         })
