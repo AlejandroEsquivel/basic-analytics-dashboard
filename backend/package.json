@@ -1,0 +1,30 @@
+{
+  "name": "quietly-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-root-import": "^6.0.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "helmet": "^3.18.0",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.0",
+    "q": "^1.5.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/babel  ./src --experimental --source-maps-inline -d ./dist",
+    "start": "npm run dev",
+    "dev": "nodemon src/Server.js --exec \"node -r babel-register\""
+  }
+}
