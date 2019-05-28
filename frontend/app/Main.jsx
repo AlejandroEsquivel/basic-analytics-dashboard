@@ -19,6 +19,3 @@ ReactDOM.render(
 	</AppProvider>,
   document.getElementById('app')
 );
-//Client ID: 884408993680-eutajej3pohicfma4nnfkudhhvf4hn8l.apps.googleusercontent.com
-
-// https://firebase.google.com/docs/reference/js/firebase.auth.GoogleAuthProvider

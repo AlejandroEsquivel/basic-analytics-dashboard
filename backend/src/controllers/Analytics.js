@@ -46,7 +46,7 @@ export default class AnalyticsController {
     }
 
     getViews (req,res,next) {
-        //UA-79673409-1
+
         const token = this.getToken(req,res,next);
 
         const { accountId, webPropertyId } = req.params;
@@ -73,7 +73,6 @@ export default class AnalyticsController {
 
             return this.client.getMetrics(token,viewId, metrics.join(',') , startDate, endDate)
                 .then(res=>{
-                    //console.log(res);
                     return res.rows.length ? res.rows[0] : [];
                 })
                 .then(res=>{
