@@ -39,7 +39,6 @@ export default class MetricsRoute extends React.Component {
     }
 
     handleChange = (event)=>{
-        //alert(event.target.value)
         this.setState({
             selected: event.target.value
         })
